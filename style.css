@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    height: 100vh;
+    margin-inline: 100px;
+   background-color:rgba(128, 128, 128, 0.193)
+}
+
+.main-content{
+
+    display: flex;
+    flex-direction: row;
+   gap:50px
+}
+
+.left-side-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.right-side-div{
+    display: flex;
+    flex-wrap: column;
+    gap:20px;
+    margin-top:100px
+}
+
+.members{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.waiting-div{
+    height: 200px;
+    width:430px;
+    
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+li{
+    list-style-type: none
+}
+
+.team-minus{
+    margin-left: 20px;
+}
+
+.team-cards{
+    height:200px;
+    width:150px;
+   
+    gap:20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;color: black;
+}
+
+button{
+    height:37px;
+    width:60px;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+input{
+    height: 30px;
+}
+p{
+    margin-inline: 20px;
+    font-size: 20px;
+    
+}
+
+.lower-buttons{
+    display: flex;
+    gap:10px;
+    margin-top: 10px;
+}
+
+.assign-member{
+    width:240px
+}
+
+.remove{
+    background-color: red;
+    width: 100px;
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px  ;
+}
