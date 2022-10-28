@@ -16,7 +16,21 @@ const addMember = () => {
   });
 };
 addMember();
-console.log(teamAmount);
+
+const addMemberEnter = () => {
+  document.querySelector("input").addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      let li = document.createElement("li");
+      let inputValue = input.value;
+      li.innerHTML = inputValue;
+      let list = document.querySelector(".waiting-list");
+      list.append(li);
+      input.value = "";
+    }
+  });
+};
+
+addMemberEnter();
 
 const addTeam = () => {
   teamMinus.addEventListener("click", () => {
@@ -38,7 +52,7 @@ const createTeams = () => {
     let hr = document.createElement("hr");
 
     newDiv.classList.add("team-cards");
-    let teamNames = "Team" + total;
+    let teamNames = "Team " + total;
 
     newDiv.innerHTML = teamNames;
     newDiv.appendChild(hr);
@@ -74,16 +88,28 @@ const removeName = () => {
 removeName();
 
 const assignMember = () => {
-    const assignButton = document.querySelector('.assign-member')
-    assignButton.addEventListener('click', () => {
-  const ul = document.querySelector(".waiting-list");
-  const newName = ul.lastElementChild;
-  const newNameInfo = newName.innerHTML
- const cards = document.querySelector('.team-cards')
- cards.appendChild(newNameInfo)
-
-  
- 
-})
+  const assignButton = document.querySelector(".assign-member");
+  assignButton.addEventListener("click", () => {
+    const ul = document.querySelector(".waiting-list");
+    const newName = ul.lastElementChild
+    newName.classList.add('new-names')
+    const cards = document.querySelectorAll(".team-cards");
+    // for(let i=0; i<cards.length;i++){
+    //     cards[i].appendChild(newName)
+    for (let i = 0; i < Math.ceil(Math.random() * cards.length); i++) {
+      console.log(cards[i]);
+      cards[i].appendChild(newName);
+    }
+    console.log(Math.random() * cards.length);
+  });
 };
 assignMember();
+
+const reset = () => {
+  const resetButton = document.querySelector(".reset");
+  resetButton.addEventListener("click", () => {
+    window.location.reload();
+  });
+};
+
+reset();

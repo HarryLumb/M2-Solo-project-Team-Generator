@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body{
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     margin-inline: 100px;
-   background-color:rgba(128, 128, 128, 0.193)
+   background-color:rgba(128, 128, 128, 0.193);
+   font-family: 'Poppins', sans-serif;
+   color: white;
+   width: 100%;
+   overflow-x: hidden;
+   position: relative;
+   
+   
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
+background: linear-gradient(to right, #1D2671, #C33764);
+background-color: #374054;
+  
 }
 
 .main-content{
 
     display: flex;
     flex-direction: row;
-   gap:50px
+   gap:100px;
+   width:100%;
 }
 
 .left-side-div{
@@ -17,29 +31,40 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height:80vh;
+    width: 30%;
    
 }
 
 .right-side-div{
     display: flex;
-    flex-wrap: column;
+    flex-wrap: wrap;
     gap:20px;
-    margin-top:100px
+    margin-top:150px;
+    width:50%
+    
+    
 }
 
 .members{
     display:flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
     
 }
 
 .waiting-div{
     height: 200px;
     width:430px;
-    
+    overflow: auto;
     margin-top: 20px;
     border-radius: 5px;
     background-color: white;
+    color: black;
 }
 
 li{
@@ -48,17 +73,22 @@ li{
 
 .team-minus{
     margin-left: 20px;
+    
+    
+    
+   
 }
 
 .team-cards{
-    height:200px;
+    height:210px;
     width:150px;
-   
+   overflow: hidden;
     gap:20px;
     border-radius: 5px;
     text-align: center;
     background-color: white;
     font-weight: bold;color: black;
+    box-shadow: 5px 5px 40px rgba(255, 255, 255, 0.322);
 }
 
 button{
@@ -72,6 +102,8 @@ button{
 
 input{
     height: 30px;
+    width:170px;
+    outline: none;
 }
 p{
     margin-inline: 20px;
@@ -86,7 +118,8 @@ p{
 }
 
 .assign-member{
-    width:240px
+    width:252px;
+    
 }
 
 .remove{
@@ -98,5 +131,52 @@ p{
 .card-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px  ;
+    gap: 20px ;
+    margin-top: 20px;
 }
+
+hr{
+    color: grey;
+    background-color: grey  ;
+}
+
+.reset{
+    background-color: red;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-div {
+    width:40px;
+
+}
+
+.member-teams{
+    
+    
+    margin-bottom: 0px;
+    padding-top:30px;
+    display: flex;
+    gap: 160px;
+}
+
+
+.new-names{
+    font-weight: lighter   ;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: lighter;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+

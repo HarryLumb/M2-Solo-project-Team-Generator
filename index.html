@@ -11,13 +11,22 @@
     <div class="main-content">
 
         <div class="left-side-div">
-            <H1>TEAM GENERATOR</H1>
+           <div> <H1>TEAM GENERATOR</H1></div>
+            <div class="member-teams">Add Member<span>Increase Teams</span></div>
             <div class="members">
                 <div class="input-div"><input class="input" type="text"></div>
-                <button id="add-member">Add</button>
-                <button class="team-minus">-</button>
+                <button id="add-member"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg></button>
+                <button class="team-minus"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                  </svg></button>
                 <p class="team-amount"></p>
-                <button class="team-plus">+</button>
+                <button class="team-plus"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg></button>
 
             </div>
             <div class="waiting-div">
@@ -27,7 +36,8 @@
             </div>
             <div class="lower-buttons">
                 <button class="assign-member">Assign Member</button>
-                <button class="remove">Remove </button>
+                <button class="remove">Remove Member </button>
+                <button class="reset"> Reset</button>
         </div>
         
         </div>
